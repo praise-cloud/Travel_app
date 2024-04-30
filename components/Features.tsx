@@ -7,8 +7,10 @@ type FeatureItem ={
     description : string;
 }
 
+// this is the feature component from the component folder
 const FeatureItem = ({title, icon, description}: FeatureItem) =>{
     return(
+        // this is us defining the ui template for the feature
         <li className="flex w-full flex-1 flex-col items-start">
             <div className="rounded-full p-4 lg:p-7 bg-green-50">
                 <Image 
@@ -28,7 +30,7 @@ const FeatureItem = ({title, icon, description}: FeatureItem) =>{
 
 const Features = () => {
   return (
-    <section className="borer-2 border-red-500 flex-col flexCenter overflow-hidden bg-feature-bg b-center bg-on-repeat py-24">
+    <section className="flex-col flexCenter overflow-hidden bg-feature-bg b-center bg-on-repeat py-24">
         <div className="max-container padding-container relative w-full flex justify-end">
             <div className="flex flex-1 lg:min-h-[900px]">
                 <Image 
@@ -52,6 +54,7 @@ const Features = () => {
                     <h2 className="bold-40 lg:bold-64">Our Features</h2>
                 </div>
                 <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
+                    {/* this is us importing the feature component */}
                     {FEATURES.map((feature) =>(
                         <FeatureItem 
                             key={feature.title}
