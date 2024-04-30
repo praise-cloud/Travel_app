@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
               {/* "/" it means it is pointing to the home page */}
         <Link href="/">
-            <Image src="/hilink-logo.svg" alt="logo" width={74} height={29}/>
+            <Image src="./hilink-logo.svg" alt="logo" width={74} height={29}/>
         </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
@@ -30,7 +30,7 @@ const Navbar = () => {
             </div>
 
             <Image  
-              src="menu.svg"
+              src="./menu.svg"
               alt= "menu"
               width={32}
               height={32}
