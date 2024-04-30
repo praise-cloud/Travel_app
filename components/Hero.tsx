@@ -8,7 +8,7 @@ const Hero = () => {
 
         <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
             <Image 
-                src= "/camp.svg"
+                src= "./camp.svg"
                 alt= "camp"
                 width={50}
                 height={50}
@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="flex itemcenter gap-2">
                     {Array(5).fill(1).map((_, index) =>(
                         <Image 
-                            src="/star.svg"
+                            src="./star.svg"
                             key ={'index'}
                             alt = "star"
                             width={24}
@@ -37,7 +37,7 @@ const Hero = () => {
 
             <div className="flex flex-col w-full gap-3 sm:flex-row">
                 <Button type="button" title="Download App" variant="btn_green"/>
-                <Button type="button" title="How we work?" icon ="/play.svg"
+                <Button type="button" title="How we work?" icon ="./play.svg"
                  variant="btn_white_text"/>
             </div>
         </div>
